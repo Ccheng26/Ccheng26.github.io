@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Vollkorn:700i" rel="stylesheet">
+  <title>Portfolio</title>
+  <script src="./js/jquery-3.1.1.min.js"></script>
+  <script src="./js/jquery-ui.min.js"></script>
+  <script src="./js/bootstrap.js"></script>
+  <script src="./js/typeit-4.4.0.min.js"></script>
+  <script src="./js/script.js"></script>
+  <link href="./css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="./css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body data-spy="scroll" data-target=".navbar-fixed-top" id="page-top">
+  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle" data-target=".navbar-main-collapse" data-toggle="collapse" type="button">Menu <i class="fa fa-bars"></i></button> <a class="navbar-brand page-scroll" href="#page-top"><i class="fa fa-play-circle"></i> <span class="light">Connie Cheng</span></a>
+      </div><!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+        <ul class="nav navbar-nav">
+          <li class="hidden">
+            <a href="#page-top"></a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#about">About</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#portfolio">Portfolio</a>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+  </nav>
+  <header class="intro">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-12 introtext">
+          <h1 class="line">My name is Connie. I'm a web dev who</h1>
+          <h1 class="texts"></h1>
+        </div>
+      </div>
+    </div>
+  </header><!-- About Section -->
+  <section class="container text-center" id="about">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h1>About Me</h1>
+        <hr class="star-primary">
+        <br>
+        <div class="col-sm-6">
+          <h4 class= "desH">Currently</h4>
+          
+          <ul>
+            <li class= "des">Working at an E-Commerce company</li>
+            <li class= "des">Attending BrooklynJS and other JS Meetups</li>
+            <li class= "des">Looking for fulltime developer positions <a id="res" href="https://drive.google.com/file/d/1-jGl_rLTq9AuE5Co-wsR5cMXYHIlx4LB/view?usp=sharing">View My Resume</a></li>
+            
+          </ul>
+          
+        </div>
+        <div class="col-sm-6">
+          <h4 class= "desH">Quick Facts</h4>
+          
+          <ul>
+            <li class= "des">Native New Yorker.</li>
+            <li class= "des">All about the process.</li>
+            <li class= "des">Highly focused on data-visualization.</li>
+            <li class= "des">Extra concerned about not using a sledgehammer to crack a nut.</li>
+          </ul>
+          
+        </div>
+      </div>
+    </div></section>
+  <br><br><br><br>
+  <section class="text-center" id="portfolio">
+    <div class="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h1>Portfolio</h1>
+            <hr class="star-primary">
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+            <div class="caption">
+              <div class="caption-content">
+                <i class="fa fa-search-plus fa-3x"></i>
+              </div>
+            </div><img alt="" class="img-responsive" src="./img/sam.PNG"></a>
+          </div>
+          <div class="col-sm-4 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+            <div class="caption">
+              <div class="caption-content">
+                <i class="fa fa-search-plus fa-3x"></i>
+              </div>
+            </div><img alt="" class="img-responsive" src="./img/cbdb.PNG"></a>
+          </div>
+          <div class="col-sm-4 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+            <div class="caption">
+              <div class="caption-content">
+                <i class="fa fa-search-plus fa-3x"></i>
+              </div>
+            </div><img alt="" class="img-responsive" src="./img/evaid.PNG"></a>
+          </div>
+        </div>
+      </div>
+    </div><br>
+    <br>
+    <br>
+    <br></section><!-- modals -->
+  <div aria-hidden="true" class="portfolio-modal modal fade" id="portfolioModal1" role="dialog" tabindex="-1">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="modal-body">
+              <h2>Samaritan</h2>
+              <hr class="star-primary">
+              <ul class="list-inline item-details">
+                <li>View Demo on: <strong><a href="http://samaritan-app.herokuapp.com">Heroku</a></strong></li>
+                <li>See Code on: <strong><a href="https://github.com/Ccheng26/samaritan-server">GitHub</a></strong></li>
+                <li>Built On: <strong>Node.JS</strong></li>
+              </ul>
+              <p class="mtext">A web app that allows you to search and save non-profit pledges. Powered by the GuideStar API.</p><img alt="" class="img-responsive img-centered" src="./img/sam.PNG"> <button class="btn btn-default" data-dismiss="modal" type="button"><i class="fa fa-times"></i> Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div aria-hidden="true" class="portfolio-modal modal fade" id="portfolioModal2" role="dialog" tabindex="-1">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="modal-body">
+              <h2>Comic DB</h2>
+              <hr class="star-primary">
+              <ul class="list-inline item-details">
+                <li>View Demo on: <strong><a href="http://comicchardb.herokuapp.com">Heroku</a></strong></li>
+                <li>See Code on: <strong><a href="https://github.com/Ccheng26/ComicDB">GitHub</a></strong></li>
+                <li>Built On: <strong>Node.JS</strong></li>
+              </ul>
+              <p class="mtext">Comic book database that allows the user to search and save character bios. Powered by the Comicvine API</p><img alt="" class="img-responsive img-centered" src="./img/cbdb.PNG"> <button class="btn btn-default" data-dismiss="modal" type="button"><i class="fa fa-times"></i> Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div aria-hidden="true" class="portfolio-modal modal fade" id="portfolioModal3" role="dialog" tabindex="-1">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="modal-body">
+              <h2>EVAid</h2>
+              <hr class="star-primary">
+              <ul class="list-inline item-details">
+                <li>View Demo on: <strong><a href="https://ccheng26.github.io/EVAid/">GitHub</a></strong></li>
+                <li>See Code on: <strong><a href="https://github.com/Ccheng26/EVAid">GitHub</a></strong></li>
+                <li>Built On: <strong>HTML, CSS, Vanilla JS</strong></li>
+              </ul>
+              <p class="mtext">E-Commerce site for customizing medical supplies.</p><img alt="" class="img-responsive img-centered" src="./img/evaid.PNG"> <button class="btn btn-default" data-dismiss="modal" type="button"><i class="fa fa-times"></i> Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="footer">
+        Find me on social media!<br>
+        <!-- All logos are taken from logo packages downloaded from each social meda site and are within usage rights; list of logos: Twitter, GitHub, Linked In.
+a href links the logo images to which ever hyperlink I've sourced, while the target opens a new tab instead of redirecting the same page-->
+         <a class="pad" href="https://twitter.com/ccheng52/" target="_blank"><img class="logos" src="./img/Twitter_Social_Icon_Circle_Color.png"></a> <a class="pad" href="https://github.com/Ccheng26" target="_blank"><img class="logos" src="./img/GitHub-Mark-Light-32px.png"></a> <a class="pad" href="https://www.linkedin.com/in/ccheng52" target="_blank"><img class="logos" src="./img/In-2C-34px-R.png"></a>
+      </div>
+    </div></section>
+</body>
+</html>
